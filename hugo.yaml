@@ -1,5 +1,5 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: https://blog.felpo.dev/
+languageCode: pt-br
+title: Felpo Blog
 
 theme: ["PaperMod"]
