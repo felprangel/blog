@@ -23,7 +23,7 @@ Se já tiver algum deles instalado, o `pacman` vai te avisar. Caso contrário, p
 O `pacman` é incrível, mas ele pode ficar ainda melhor. Abra o arquivo de configuração:
 
 ```bash
-sudo nano /etc/pacman.conf
+sudo vim /etc/pacman.conf
 ```
 
 Agora:
