@@ -1,5 +1,5 @@
 ---
-title: O que fazer depois de instalar o Arch Linux: o Guia para Dominar o Universo (ou pelo menos o seu PC)
+title: "O que fazer depois de instalar o Arch Linux: o Guia para Dominar o Universo (ou pelo menos o seu PC)"
 date: 2025-02-02
 draft: false
 ---
