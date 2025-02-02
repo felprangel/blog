@@ -3,7 +3,6 @@ title: Meu ambiente de desenvolvimento 2025
 date: 2025-01-29
 draft: false
 ---
-
 Se tem uma coisa que a gente aprende com o tempo, é que passar horas no terminal pode ser uma experiência dolorosa ou uma jornada digna de um mestre Jedi. Em 2025, um bom ambiente de desenvolvimento não é só um capricho, é um passaporte para a produtividade! Vamos configurar um terminal que é rápido, bonito e cheio de recursos. Aqui estão os passos para transformar seu Ubuntu em uma verdadeira nave espacial da codificação.
 
 ---
@@ -33,7 +32,6 @@ chsh -s $(which zsh)
 Faça logout e entre novamente para ver a mágica acontecer.
 
 ### Opcional
-
 Adicionar o script baixado do meu repositório de arquivos de configuração no final do arquivo `~/.zshrc`
 
 ---
@@ -60,6 +58,16 @@ source ~/.zshrc
 Agora seu terminal prevê comandos como um mágico!
 
 ---
+## Instalando uma Nerd Font
+
+Pessoalmente eu gosto bastante da fonte Fira Code, segue os passos para baixá-la e usá-la
+
+```bash
+mkdir ~/.local/share/fonts/
+wget -P ~/.local/share/fonts/ 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip' 
+unzip ~/.local/share/fonts/FiraCode.zip -d ~/.local/share/fonts/
+```
+___
 
 ## Instalando Starship (Deixando o terminal nutella)
 
@@ -74,7 +82,6 @@ O **Alacritty** é um dos terminais mais rápidos e bonitos que você pode ter. 
 E pronto, temos um terminal de respeito!
 
 ### Opcional
-
 Copiar os arquivos de configuração do meu repositório e colar na pasta `~/.config/alacritty`, que já vai prover um tema bonito para o terminal
 
 ---
@@ -132,7 +139,6 @@ tmux
 Agora você tem um terminal turbo com divisão de janelas!
 
 ### Opcional
-
 Baixar o arquivo de configuração do tmux e colar na pasta home, tendo atalhos melhores e um tema bonito para o tmux também
 
 ---
@@ -145,4 +151,4 @@ Substituir o `cat` pelo `bat` e o `ls` pelo `eza` faz seu terminal parecer um pa
 
 ## Conclusão
 
-Agora você tem um terminal bonito, funcional e rápido. Seu ambiente de desenvolvimento está preparado para 2025 e além! Agora só falta escrever código de qualidade... mas isso já é outra história.
+Agora você tem um terminal bonito, funcional e rápido. Seu ambiente de desenvolvimento está preparado para 2025 e além! Agora só falta escrever código de qualidade... mas isso já é outra história. 
