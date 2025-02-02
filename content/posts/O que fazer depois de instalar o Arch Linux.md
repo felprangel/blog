@@ -1,9 +1,8 @@
 ---
-title: O que fazer depois de instalar o Arch Linux
+title: O que fazer depois de instalar o Arch Linux: o Guia para Dominar o Universo (ou pelo menos o seu PC)
 date: 2025-02-02
 draft: false
 ---
-# O que fazer depois de instalar o Arch Linux: o Guia para Dominar o Universo (ou pelo menos o seu PC)
 
 Parabéns! Se você está lendo isso, é porque conseguiu atravessar o deserto do instalador do Arch Linux. Sobreviveu ao particionamento de disco, configurou o GRUB sem chorar (ou pelo menos escondeu bem), e agora está diante de um sistema operacional cru, pronto para ser moldado à sua imagem e semelhança.
 
