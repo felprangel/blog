@@ -15,26 +15,30 @@ Depois de ler esse post você vai poder:
 
 # Índice
 
-- [[#Introdução ao NGINX]]
-- [[#Como instalar o NGINX]]
-- [[#Introdução as configurações do NGINX]]
-- [[#Como configurar um servidor web básico]]
-  - [[#Escrevendo seu primeiro arquivo de configuração]]
-  - [[#Como validar e recarregar os arquivos de configuração]]
-  - [[#Como entender as diretivas e contextos no NGINX]]
-  - [[#Como servir conteúdo estático usando NGINX]]
-  - [[#Lidando com tipo de arquivo estático no NGINX]]
-  - [[#Como incluir arquivos de configuração parciais]]
-- [[#Roteamento dinâmico no NGINX]]
-  - [[#Correspondência de localização]]
-  - [[#Variáveis no NGINX]]
-  - [[#Redirecionamentos e Reescritas]]
-  - [[#Como tentar por múltiplos arquivos]]
-- [[#Logs no NGINX]]
-- [[#Como usar o NGINX como uma proxy reversa]]
-  - [[#Node com NGINX]]
-- [[#Como usar o NGINX como um load balancer]]
-- [[#Como configurar processos worker e conexões worker]]
+Aqui está a versão corrigida da sua lista:
+
+- [Introdução ao NGINX](#introdução-ao-nginx)
+- [Como instalar o NGINX](#como-instalar-o-nginx)
+- [Introdução às configurações do NGINX](#introdução-às-configurações-do-nginx)
+- [Como configurar um servidor web básico](#como-configurar-um-servidor-web-básico)
+  - [Escrevendo seu primeiro arquivo de configuração](#escrevendo-seu-primeiro-arquivo-de-configuração)
+  - [Como validar e recarregar os arquivos de configuração](#como-validar-e-recarregar-os-arquivos-de-configuração)
+  - [Como entender as diretivas e contextos no NGINX](#como-entender-as-diretivas-e-contextos-no-nginx)
+  - [Como servir conteúdo estático usando NGINX](#como-servir-conteúdo-estático-usando-nginx)
+  - [Lidando com tipos de arquivo estático no NGINX](#lidando-com-tipos-de-arquivo-estático-no-nginx)
+  - [Como incluir arquivos de configuração parciais](#como-incluir-arquivos-de-configuração-parciais)
+- [Roteamento dinâmico no NGINX](#roteamento-dinâmico-no-nginx)
+  - [Correspondência de localização](#correspondência-de-localização)
+  - [Variáveis no NGINX](#variáveis-no-nginx)
+  - [Redirecionamentos e reescritas](#redirecionamentos-e-reescritas)
+  - [Como tentar múltiplos arquivos](#como-tentar-múltiplos-arquivos)
+- [Logs no NGINX](#logs-no-nginx)
+- [Como usar o NGINX como um proxy reverso](#como-usar-o-nginx-como-um-proxy-reverso)
+  - [Node com NGINX](#node-com-nginx)
+- [Como usar o NGINX como um load balancer](#como-usar-o-nginx-como-um-load-balancer)
+- [Como configurar processos worker e conexões worker](#como-configurar-processos-worker-e-conexões-worker)
+
+Agora os itens seguem o mesmo padrão da primeira correção que você mencionou. Me avise se precisar de mais ajustes! 🚀
 
 ## Introdução ao NGINX
 
