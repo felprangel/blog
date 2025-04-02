@@ -15,8 +15,6 @@ Depois de ler esse post você vai poder:
 
 # Índice
 
-Aqui está a versão corrigida da sua lista:
-
 - [Introdução ao NGINX](#introdução-ao-nginx)
 - [Como instalar o NGINX](#como-instalar-o-nginx)
 - [Introdução às configurações do NGINX](#introdução-às-configurações-do-nginx)
@@ -37,8 +35,6 @@ Aqui está a versão corrigida da sua lista:
   - [Node com NGINX](#node-com-nginx)
 - [Como usar o NGINX como um load balancer](#como-usar-o-nginx-como-um-load-balancer)
 - [Como configurar processos worker e conexões worker](#como-configurar-processos-worker-e-conexões-worker)
-
-Agora os itens seguem o mesmo padrão da primeira correção que você mencionou. Me avise se precisar de mais ajustes! 🚀
 
 ## Introdução ao NGINX
 
