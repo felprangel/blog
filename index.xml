@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Felpo Blog</title><link>https://felprangel.github.io/felpoblog/</link><description>Recent content on Felpo Blog</description><generator>Hugo -- 0.147.0</generator><language>pt-br</language><lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://felprangel.github.io/felpoblog/index.xml" rel="self" type="application/rss+xml"/><item><title>Entendendo as Diferenças entre Regras de Negócio, Requisitos Funcionais e Não Funcionais</title><link>https://felprangel.github.io/felpoblog/posts/entendendo-as-diferen%C3%A7as-entre-regras-de-neg%C3%B3cio-requisitos-funcionais-e-n%C3%A3o-funcionais/</link><pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate><guid>https://felprangel.github.io/felpoblog/posts/entendendo-as-diferen%C3%A7as-entre-regras-de-neg%C3%B3cio-requisitos-funcionais-e-n%C3%A3o-funcionais/</guid><description>&lt;p>Se você trabalha (ou quer trabalhar) com análise de sistemas, desenvolvimento ou produto, entender esses três conceitos é fundamental. Vamos lá:&lt;/p>
+&lt;h3 id="-regras-de-negócio">📌 Regras de Negócio&lt;/h3>
+&lt;p>São as diretrizes que a empresa segue, independentemente da existência de um sistema. São definidas pelo negócio, não pela tecnologia.&lt;/p>
+&lt;p>&lt;strong>Exemplo (Loja de Roupas):&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Não vende fiado&lt;/li>
+&lt;li>Só aceita trocas com produto em perfeito estado&lt;/li>
+&lt;li>Aceita pagamento por boleto&lt;/li>
+&lt;li>Não aceita pagamento por cheque&lt;/li>
+&lt;/ul>
+&lt;p>&lt;em>Ou seja: se a empresa deixar de usar o sistema, essas regras continuam valendo.&lt;/em>&lt;/p></description></item><item><title>Guia básico de NGINX</title><link>https://felprangel.github.io/felpoblog/posts/guia-b%C3%A1sico-de-nginx/</link><pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate><guid>https://felprangel.github.io/felpoblog/posts/guia-b%C3%A1sico-de-nginx/</guid><description>&lt;p>Hoje vou fazer um dump de tudo que sei de NGINX, mostrando que não é difícil dar manutenção nos arquivos de configuração do seu servidor.&lt;/p>
+&lt;p>Depois de ler esse post você vai poder:&lt;/p>
+&lt;ul>
+&lt;li>Entender os arquivos de configuração do NGINX&lt;/li>
+&lt;li>Configurar o NGINX como um servidor web&lt;/li>
+&lt;li>Configurar o NGINX como um proxy reverso&lt;/li>
+&lt;li>Configurar o NGINX como um load balancer&lt;/li>
+&lt;/ul>
+&lt;h1 id="índice">Índice&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#introdu%C3%A7%C3%A3o-ao-nginx">Introdução ao NGINX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-instalar-o-nginx">Como instalar o NGINX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#introdu%C3%A7%C3%A3o-%C3%A0s-configura%C3%A7%C3%B5es-do-nginx">Introdução às configurações do NGINX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-configurar-um-servidor-web-b%C3%A1sico">Como configurar um servidor web básico&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#escrevendo-seu-primeiro-arquivo-de-configura%C3%A7%C3%A3o">Escrevendo seu primeiro arquivo de configuração&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-validar-e-recarregar-os-arquivos-de-configura%C3%A7%C3%A3o">Como validar e recarregar os arquivos de configuração&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-entender-as-diretivas-e-contextos-no-nginx">Como entender as diretivas e contextos no NGINX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-servir-conte%C3%BAdo-est%C3%A1tico-usando-nginx">Como servir conteúdo estático usando NGINX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#lidando-com-tipos-de-arquivo-est%C3%A1tico-no-nginx">Lidando com tipos de arquivo estático no NGINX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-incluir-arquivos-de-configura%C3%A7%C3%A3o-parciais">Como incluir arquivos de configuração parciais&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#roteamento-din%C3%A2mico-no-nginx">Roteamento dinâmico no NGINX&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#correspond%C3%AAncia-de-localiza%C3%A7%C3%A3o">Correspondência de localização&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#vari%C3%A1veis-no-nginx">Variáveis no NGINX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#redirecionamentos-e-reescritas">Redirecionamentos e reescritas&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-tentar-m%C3%BAltiplos-arquivos">Como tentar múltiplos arquivos&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#logs-no-nginx">Logs no NGINX&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-usar-o-nginx-como-um-proxy-reverso">Como usar o NGINX como um proxy reverso&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#node-com-nginx">Node com NGINX&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#como-usar-o-nginx-como-um-load-balancer">Como usar o NGINX como um load balancer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#como-configurar-processos-worker-e-conex%C3%B5es-worker">Como configurar processos worker e conexões worker&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="introdução-ao-nginx">Introdução ao NGINX&lt;/h2>
+&lt;p>Apesar de ser mais conhecido como um servidor web, o NGINX é basicamente um servidor de &lt;a href="https://pt.wikipedia.org/wiki/Proxy_reverso">proxy reverso&lt;/a>.&lt;/p></description></item><item><title>As partes importantes de Clean Code (O Codificador Limpo)</title><link>https://felprangel.github.io/felpoblog/posts/as-partes-importantes-de-clean-coder-o-codificador-limpo/</link><pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate><guid>https://felprangel.github.io/felpoblog/posts/as-partes-importantes-de-clean-coder-o-codificador-limpo/</guid><description>&lt;p>Para ser sincero, estou escrevendo este post mais para minhas consultas futuras do que por qualquer outro motivo, mas sei que pode ser útil para outras pessoas. Dito isso, tentei explicar com minhas palavras os pontos mais importantes do livro em cada capítulo.&lt;/p>
+&lt;p>Lembre-se: nada aqui é regra absoluta. Tudo pode e deve ser questionado. Agora, sem mais delongas, vamos aos capítulos!&lt;/p>
+&lt;h2 id="profissionalismo">Profissionalismo&lt;/h2>
+&lt;h3 id="profissionalismo--responsabilidade">Profissionalismo = Responsabilidade&lt;/h3>
+&lt;h4 id="não-cause-danos-ao-funcionamento">Não cause danos ao funcionamento&lt;/h4>
+&lt;blockquote>
+&lt;p>[&amp;hellip;] Software é muito complexo para ser criado sem bugs. Mas infelizmente, isso não o exime de sua responsabilidade. O corpo humano é muito complexo para ser entendido plenamente, mas os médicos ainda fazem um juramento para não danificá-lo. Se eles não se eximem da responsabilidade, por que nós deveríamos?&lt;/p></description></item><item><title>O que fazer depois de instalar o Arch Linux: o Guia para Dominar o Universo (ou pelo menos o seu PC)</title><link>https://felprangel.github.io/felpoblog/posts/o-que-fazer-depois-de-instalar-o-arch-linux/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><guid>https://felprangel.github.io/felpoblog/posts/o-que-fazer-depois-de-instalar-o-arch-linux/</guid><description>&lt;p>Parabéns! Se você está lendo isso, é porque conseguiu atravessar o deserto do instalador do Arch Linux. Sobreviveu ao particionamento de disco, configurou o GRUB sem chorar (ou pelo menos escondeu bem), e agora está diante de um sistema operacional cru, pronto para ser moldado à sua imagem e semelhança.&lt;/p>
+&lt;p>Mas&amp;hellip; e agora? O que fazer depois de instalar o Arch Linux? Relaxa, aqui está o seu mapa do tesouro:&lt;/p></description></item><item><title>Meu ambiente de desenvolvimento 2025</title><link>https://felprangel.github.io/felpoblog/posts/meu-ambiente-de-desenvolvimento-2025/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://felprangel.github.io/felpoblog/posts/meu-ambiente-de-desenvolvimento-2025/</guid><description>&lt;p>Se tem uma coisa que a gente aprende com o tempo, é que passar horas no terminal pode ser uma experiência dolorosa ou uma jornada digna de um mestre Jedi. Em 2025, um bom ambiente de desenvolvimento não é só um capricho, é um passaporte para a produtividade! Vamos configurar um terminal que é rápido, bonito e cheio de recursos. Aqui estão os passos para transformar seu Ubuntu em uma verdadeira nave espacial da codificação.&lt;/p></description></item></channel></rss>
