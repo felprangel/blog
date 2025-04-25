@@ -6,6 +6,9 @@ on:
       - main # Set a branch to deploy
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
@@ -17,7 +20,6 @@ jobs:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      # Adicione estes passos para garantir que o submodule está atualizado
       - name: Update theme submodules
         run: |
           git submodule update --init --recursive
