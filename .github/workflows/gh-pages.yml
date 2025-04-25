@@ -14,7 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive # Fetch Hugo themes (true OR recursive)
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+
+      # Adicione estes passos para garantir que o submodule está atualizado
+      - name: Update theme submodules
+        run: |
+          git submodule update --init --recursive
+          git submodule update --remote --merge
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
