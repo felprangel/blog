@@ -1,5 +1,5 @@
 ---
-title: As partes importantes de Clean Code (O Codificador Limpo)
+title: As partes importantes de Clean Coder (O Codificador Limpo)
 date: 2025-03-01
 draft: false
 ---
