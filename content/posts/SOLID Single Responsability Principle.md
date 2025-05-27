@@ -10,8 +10,6 @@ De todos os princípios SOLID, o SRP provavelmente é o mais conhecido e o menos
 
 O SRP diz basicamente: "Um módulo deve ter uma, e apenas uma, razão para mudar".
 
-Em termos mais técnicos e menos zen, o princípio diz que uma classe deve ter apenas uma responsabilidade, ou seja, apenas um motivo para mudar. Parece simples, né? Spoiler alert: não é.
-
 ## O Problema: A Classe Canivete Suíço
 
 Imagine que você está no escritório e encontra esta belezinha no código:
