@@ -1,5 +1,5 @@
 ---
-title: "SOLID Open Close Principle"
+title: "SOLID Open Closed Principle"
 date: 2025-06-01
 draft: false
 ---
