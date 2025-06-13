@@ -1,6 +1,6 @@
 ---
 title: "As partes importantes de Clean Architecture (Arquitetura Limpa)"
-date: 2025-06-08
+date: 2025-06-10
 draft: false
 ---
 
