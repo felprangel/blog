@@ -1,6 +1,6 @@
 ---
 title: "Como fazer amigos e influenciar pessoas"
-date: 2026-20-01
+date: 2026-01-20
 draft: false
 ---
 
