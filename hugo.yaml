@@ -9,3 +9,10 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+menu:
+  main:
+    - identifier: pesquisa
+      name: pesquisa
+      url: /search/
+      weight: 10
