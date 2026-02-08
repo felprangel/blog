@@ -3,3 +3,9 @@ languageCode: pt-br
 title: Felpo Blog
 
 theme: ["PaperMod"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
