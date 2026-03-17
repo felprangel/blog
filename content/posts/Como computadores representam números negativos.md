@@ -39,7 +39,7 @@ O segundo é fatal: a **aritmética não funciona**. Tente somar -2 + 3:
 $$
 \begin{array}{r}
   1010 \\
-+ 0011 \\
+\mathbin{+}\ 0011 \\
 \hline
   1101
 \end{array}
@@ -69,7 +69,7 @@ O zero negativo ainda aparece, mas pelo menos a aritmética melhorou. Veja -2 + 
 $$
 \begin{array}{r}
   0100 \\
-+ 1101 \\
+\mathbin{+}\ 1101 \\
 \hline
   0001
 \end{array}
@@ -110,7 +110,7 @@ Dois problemas resolvidos de uma vez: **sem zero negativo**, e a aritmética fun
 $$
 \begin{array}{r}
   0100 \\
-+ 1110 \\
+\mathbin{+}\ 1110 \\
 \hline
   0010
 \end{array}
@@ -121,7 +121,7 @@ $$
 $$
 \begin{array}{r}
   1110 \\
-+ 0010 \\
+\mathbin{+}\ 0010 \\
 \hline
   0000
 \end{array}
