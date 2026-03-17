@@ -16,3 +16,20 @@ menu:
       name: Pesquisa
       url: /search/
       weight: 10
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+            - - '\['
+              - '\]'
+            - - $$
+              - $$
+          inline:
+            - - '\('
+              - '\)'
+        enable: true
+params:
+  math: true
