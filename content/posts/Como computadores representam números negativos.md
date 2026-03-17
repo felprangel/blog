@@ -2,6 +2,7 @@
 title: Como computadores representam números negativos
 date: 2026-03-16
 draft: false
+math: true
 ---
 
 Tem um conceito que eu ouvi falar várias vezes antes de realmente entender — só caiu a ficha quando li o manual do Intel 8080 enquanto desenvolvia um emulador.
