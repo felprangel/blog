@@ -29,3 +29,12 @@ markup:
             - - "$"
               - "$"
         enable: true
+
+minify:
+  tdewolff:
+    html:
+      keepWhitespace: true
+    css:
+      precision: 0
+    js:
+      precision: 0
