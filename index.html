@@ -8,7 +8,7 @@
 <meta name=description content>
 <meta name=author content>
 <link rel=canonical href=https://blog.felpo.dev/>
-<link crossorigin=anonymous href=/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css integrity="sha256-2jIR5e+Ge/K3X9WmUVz+1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as=style>
+<link crossorigin=anonymous href=/assets/css/stylesheet.6ff46447b1fa3f8a5cc0bcae48088decc3ae37f5fbc99406a3aefc3bf0e6044a.css integrity="sha256-b/RkR7H6P4pcwLyuSAiN7MOuN/X7yZQGo678O/DmBEo=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://blog.felpo.dev/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://blog.felpo.dev/favicon-16x16.png>
 <link rel=icon type=image/png sizes=32x32 href=https://blog.felpo.dev/favicon-32x32.png>
@@ -21,7 +21,7 @@
 <link rel=alternate hreflang=en href=https://blog.felpo.dev/>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}</style>
 </noscript>
 <script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script>
 <meta property="og:url" content="https://blog.felpo.dev/">
@@ -35,17 +35,17 @@
 </head>
 <body class=list id=top>
 <header class=header>
-<nav class=nav>
+<nav class=header-nav>
 <div class=logo>
 <a href=https://blog.felpo.dev/ accesskey=h title="Felpo Blog (Alt + H)">Felpo Blog</a>
 <div class=logo-switches>
-<button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+<button id=theme-toggle class=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
+<svg class="moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg class="sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
 </div>
 </div>
-<ul id=menu>
+<ul id=menu class=menu>
 <li>
 <a href=https://blog.felpo.dev/search/ title=Pesquisa>
 <span>Pesquisa</span>
@@ -57,6 +57,20 @@
 <main class=main>
 <article class=first-entry>
 <header class=entry-header>
+<h2 class=entry-hint-parent>Fundamentos da Arquitetura de Software
+</h2>
+</header>
+<div class=entry-content>
+<p>Continuando meu flerte com arquitetura de software, dessa vez foi a vez de Fundamentos da Arquitetura de Software: uma abordagem de engenharia, do Mark Richards e Neal Ford. E, como sempre, esse artigo é mais para mim do que para qualquer outra pessoa.
+Antes de entrar nos tópicos, vale guardar a ideia que atravessa o livro inteiro: arquitetura é sobre analisar trade-offs. Tudo depende, não existe bala de prata. E se você olhou para uma ferramenta e não enxergou nenhuma desvantagem nela, provavelmente ainda não a conhece bem o suficiente.
+...</p>
+</div>
+<footer class=entry-footer>
+<span title='2026-08-11 00:00:00 +0000 UTC'>August 11, 2026</span></footer>
+<a class=entry-link aria-label="post link to Fundamentos da Arquitetura de Software" href=https://blog.felpo.dev/posts/fundamentos-da-arquitetura-de-software/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2 class=entry-hint-parent>Como computadores representam números negativos
 </h2>
 </header>
@@ -65,7 +79,8 @@
 Se você já estudou os fundamentos da computação, provavelmente conhece números binários. E em algum momento, talvez tenha surgido a dúvida: como representar números negativos em binário? Se você pesquisou sobre isso, ou leu a documentação de inteiros em bancos de dados, provavelmente se deparou com algo como “um bit é reservado para o sinal” — o que explica os tipos SIGNED e UNSIGNED.
 ...</p>
 </div>
-<footer class=entry-footer><span title='2026-03-16 00:00:00 +0000 UTC'>March 16, 2026</span></footer>
+<footer class=entry-footer>
+<span title='2026-03-16 00:00:00 +0000 UTC'>March 16, 2026</span></footer>
 <a class=entry-link aria-label="post link to Como computadores representam números negativos" href=https://blog.felpo.dev/posts/como-computadores-representam-n%C3%BAmeros-negativos/></a>
 </article>
 <article class=post-entry>
@@ -79,7 +94,8 @@ Para facilitar a jornada, reuni aqui os temas centrais que considero o coração
 Linguagem Ubíqua: Falando a mesma língua Imagine o caos se o desenvolvedor fala “UserStatus” e o dono do negócio fala “Situação do Cliente”. No DDD, isso é proibido. O projeto deve ter uma linguagem única. Se uma regra de negócio usa um termo, o código deve usar o exato mesmo termo. Isso elimina a “tradução” mental e aproxima quem entende do problema de quem constrói a solução.
 ...</p>
 </div>
-<footer class=entry-footer><span title='2026-03-10 00:00:00 +0000 UTC'>March 10, 2026</span></footer>
+<footer class=entry-footer>
+<span title='2026-03-10 00:00:00 +0000 UTC'>March 10, 2026</span></footer>
 <a class=entry-link aria-label="post link to Domain Driven Design" href=https://blog.felpo.dev/posts/domain-driven-design/></a>
 </article>
 <article class=post-entry>
@@ -92,7 +108,8 @@ Linguagem Ubíqua: Falando a mesma língua Imagine o caos se o desenvolvedor fal
 Técnicas fundamentais para lidar com pessoas Se quiser colher o mel, não chute a colmeia Não critique, não condene, não reclame Ao invés de criticar e apontar os defeitos de uma pessoa, devemos tentar ser empáticos, ouvir essa pessoa, entender que, uma crítica tende a rejeição, um elogio tende a ser mais valorizado. Temos mais sucesso recompensando o bom comportamento do que punindo o comportamento ruim
 ...</p>
 </div>
-<footer class=entry-footer><span title='2026-01-20 00:00:00 +0000 UTC'>January 20, 2026</span></footer>
+<footer class=entry-footer>
+<span title='2026-01-20 00:00:00 +0000 UTC'>January 20, 2026</span></footer>
 <a class=entry-link aria-label="post link to Como fazer amigos e influenciar pessoas" href=https://blog.felpo.dev/posts/como-fazer-amigos-e-influenciar-pessoas/></a>
 </article>
 <article class=post-entry>
@@ -105,7 +122,8 @@ Técnicas fundamentais para lidar com pessoas Se quiser colher o mel, não chute
 Este princípio fundamental da culinária de qualidade se aplica perfeitamente ao desenvolvimento de software. A urgência do cliente, embora compreensível, não pode, e nem deve, reger o tempo de conclusão real de um projeto. Apressar um chef pode resultar em um omelete cru ou queimado. Apressar um time de desenvolvimento tem consequências análogas, e geralmente mais custosas.
 ...</p>
 </div>
-<footer class=entry-footer><span title='2025-09-28 00:00:00 +0000 UTC'>September 28, 2025</span></footer>
+<footer class=entry-footer>
+<span title='2025-09-28 00:00:00 +0000 UTC'>September 28, 2025</span></footer>
 <a class=entry-link aria-label="post link to O Mítico Homem-Mês" href=https://blog.felpo.dev/posts/o-m%C3%ADtico-homem-m%C3%AAs/></a>
 </article>
 <article class=post-entry>
@@ -118,7 +136,8 @@ Este princípio fundamental da culinária de qualidade se aplica perfeitamente a
 Antes de abordar alguém para dizer que algo não pode ser feito, pare e escute a si mesmo. Como sua resposta vai soar para seu chefe?
 ...</p>
 </div>
-<footer class=entry-footer><span title='2025-07-30 00:00:00 +0000 UTC'>July 30, 2025</span></footer>
+<footer class=entry-footer>
+<span title='2025-07-30 00:00:00 +0000 UTC'>July 30, 2025</span></footer>
 <a class=entry-link aria-label="post link to Sendo um programador pragmático" href=https://blog.felpo.dev/posts/sendo-um-programador-pragm%C3%A1tico/></a>
 </article>
 <article class=post-entry>
@@ -131,7 +150,8 @@ Antes de abordar alguém para dizer que algo não pode ser feito, pare e escute 
 Detalhes Fazer um programa funcionar não é difícil, estudantes de ensino médio ou fundamental fazem isso sem dificuldades. Mas fazer direito? Ah, isso sim é difícil - é como a diferença entre fazer um sanduíche e ser chef de um restaurante estrelado.
 ...</p>
 </div>
-<footer class=entry-footer><span title='2025-06-10 00:00:00 +0000 UTC'>June 10, 2025</span></footer>
+<footer class=entry-footer>
+<span title='2025-06-10 00:00:00 +0000 UTC'>June 10, 2025</span></footer>
 <a class=entry-link aria-label="post link to As partes importantes de Clean Architecture (Arquitetura Limpa)" href=https://blog.felpo.dev/posts/as-partes-importantes-de-clean-architecture-arquitetura-limpa/></a>
 </article>
 <article class=post-entry>
@@ -145,7 +165,8 @@ O Drama Antes da Inversão Imagine que você está desenvolvendo um sistema de n
 class EmailService { public function send(string $message): void { echo "Enviando email: " . $message . "\n"; } } class NotificationManager { private EmailService $emailService; public function __construct() { $this->emailService = new EmailService(); // 🚨 Bandeira vermelha! } public function notify(string $message): void { $this->emailService->send($message); } } Parece inofensivo, né? Mas na verdade você acabou de criar o equivalente tecnológico de um relacionamento tóxico. Sua NotificationManager está completamente dependente da EmailService. Quer trocar por SMS? Vai ter de refatorar a classe.
 ...</p>
 </div>
-<footer class=entry-footer><span title='2025-06-09 00:00:00 +0000 UTC'>June 9, 2025</span></footer>
+<footer class=entry-footer>
+<span title='2025-06-09 00:00:00 +0000 UTC'>June 9, 2025</span></footer>
 <a class=entry-link aria-label="post link to SOLID Dependency Inversion Principle" href=https://blog.felpo.dev/posts/solid-dependency-inversion-principle/></a>
 </article>
 <article class=post-entry>
@@ -158,7 +179,8 @@ class EmailService { public function send(string $message): void { echo "Enviand
 Em termos práticos, isso significa que é melhor ter várias interfaces pequenas e específicas do que uma interface gigantesca que tenta resolver todos os problemas do universo. É como tentar usar um único aplicativo para programar, editar imagens, gerenciar finanças e tocar música — no fim, ele faz tudo de forma mediana ou mal feita. Já ferramentas especializadas, como um editor de código, um software de design e um app de contabilidade, cada uma focada em seu propósito, entregam muito mais valor.
 ...</p>
 </div>
-<footer class=entry-footer><span title='2025-06-08 00:00:00 +0000 UTC'>June 8, 2025</span></footer>
+<footer class=entry-footer>
+<span title='2025-06-08 00:00:00 +0000 UTC'>June 8, 2025</span></footer>
 <a class=entry-link aria-label="post link to SOLID Interface Segregation Principle" href=https://blog.felpo.dev/posts/solid-interface-segregation-principle/></a>
 </article>
 <article class=post-entry>
@@ -172,21 +194,9 @@ A Definição Formal (Ou: Como Falar Difícil Para Impressionar) Barbara Liskov,
 Se φ(x) é uma propriedade demonstrável dos objetos x de tipo T, então φ(y) deve ser verdadeiro para objetos y de tipo S, onde S é um subtipo de T.
 ...</p>
 </div>
-<footer class=entry-footer><span title='2025-06-05 00:00:00 +0000 UTC'>June 5, 2025</span></footer>
+<footer class=entry-footer>
+<span title='2025-06-05 00:00:00 +0000 UTC'>June 5, 2025</span></footer>
 <a class=entry-link aria-label="post link to SOLID Liskov Substitution Principle" href=https://blog.felpo.dev/posts/solid-liskov-substitution-principle/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2 class=entry-hint-parent>SOLID Open Closed Principle
-</h2>
-</header>
-<div class=entry-content>
-<p>Se você já trabalhou com código por mais de cinco minutos, provavelmente já passou pela seguinte situação: você precisa adicionar uma nova funcionalidade e, de repente, percebe que vai ter que mexer em 47 arquivos diferentes, quebrar 23 testes e rezar para três santos diferentes para que tudo continue funcionando.
-Bem-vindo ao mundo maravilhoso do código que não segue o Princípio Aberto/Fechado (Open/Closed Principle), a segunda letra do acrônimo SOLID!
-...</p>
-</div>
-<footer class=entry-footer><span title='2025-06-01 00:00:00 +0000 UTC'>June 1, 2025</span></footer>
-<a class=entry-link aria-label="post link to SOLID Open Closed Principle" href=https://blog.felpo.dev/posts/solid-open-closed-principle/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
@@ -199,15 +209,15 @@ Bem-vindo ao mundo maravilhoso do código que não segue o Princípio Aberto/Fec
 <span>&copy; 2026 <a href=https://blog.felpo.dev/>Felpo Blog</a></span> ·
 <span>
 Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href="https://gohugo.io/?utm_source=papermod" rel=noopener target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a>
 </span>
 </footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g>
-<svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+<a href=#top id=top-link class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey=g>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg>
 </a>
 <script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script>
-<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>var toplink=document.getElementById("top-link");window.onscroll=function(){const e=window.innerHeight;document.body.scrollTop>e||document.documentElement.scrollTop>e?toplink.classList.remove("hidden"):toplink.classList.add("hidden")}</script>
 <script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script>
 </body>
 </html>
